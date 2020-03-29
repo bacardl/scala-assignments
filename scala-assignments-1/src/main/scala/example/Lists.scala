@@ -48,7 +48,7 @@ object Lists {
 
   private def supportMax(xs: List[Int]): Int = {
     if (xs.isEmpty)
-       Int.MinValue
+      Int.MinValue
     else {
       val max = supportMax(xs.tail)
       if (xs.head > max)
